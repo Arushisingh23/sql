@@ -1,0 +1,10 @@
+CREATE DATABASE DBMS;
+
+CREATE TABLE basic (
+id INT PRIMARY KEY,
+name VARCHAR(255)
+);
+
+INSERT INTO basic VALUES(1,'Anu');
+
+SELECT * FROM basic;

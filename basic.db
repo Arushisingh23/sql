@@ -1,5 +1,6 @@
-CREATE DATABASE DBMS;
+CREATE DATABASE DBMS; /* to create database */
 
+/*creating table*/
 CREATE TABLE basic (
 id INT PRIMARY KEY,
 name VARCHAR(255)
@@ -7,4 +8,8 @@ name VARCHAR(255)
 
 INSERT INTO basic VALUES(1,'Anu');
 
-SELECT * FROM basic;
+SELECT * FROM basic;  /*to select whole table*/
+SELECT id FROM basic; 
+
+SELECT DISTINCT id, name FROM basic; /* this  statement selects only the DISTINCT values from the "name" column in the "basic" table:*/
+SELECT COUNT(DISTINCT  NAME) FROM basic;  /*counts and returns the number of different (distinct) values (names) in the "basic" table:
